@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admissions Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    
+    .container {
+     background: #2c3e50;s
+      padding: 10%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 70%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .radio-group {
+      margin-bottom: 15px;
+    }
+
+    .radio-group label {
+      font-weight: normal;
+      margin-right: 10px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background :#4CAF50;
+      border: none;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 style="background-color: #45a049; border-radius: 4px;">Student Admission Form</h2><hr>
+    <form action="#" method="post">
+      <!-- Student Name -->
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <!-- Email -->
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <!-- Registration Number -->
+      <label for="regno">Registration Number:</label>
+      <input type="text" id="regno" name="regno" required>
+
+      <!-- Gender (Radio buttons) -->
+      <label>Gender:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+      </div>
+
+      <!-- Course (Select dropdown) -->
+      <label for="course">Select Course*:</label>
+      <select id="course" name="course" required>
+        <option value="">-- Choose a course --</option>
+        <option value="it">Information Technology</option>
+        <option value="cs">Computer Science</option>
+        <option value="se">Software Engineering</option>
+        <option value="ba">Business Administration</option>
+      </select>
+       <!-- UACE Section -->
+  <div class="form-section">
+    <h3>UACE Results (A-Level)*:</h3>
+    <table>
+      <tr>
+        <th>Principal Subject 1</th>
+        <th>Principal Subject 2</th>
+        <th>Principal Subject 3</th>
+        <th>General Paper</th>
+        <th>Subsidiary Subject</th>
+      </tr>
+      <tr>
+        <td><input type="text" name="uace_sub1"></td>
+        <td><input type="text" name="uace_sub2"></td>
+        <td><input type="text" name="uace_sub3"></td>
+        <td><input type="text" name="uace_gp"></td>
+        <td><input type="text" name="uace_subsidiary"></td>
+      </tr>
+    </table>
+  </div><hr>
+
+  <!-- UCE Section -->
+  <div class="form-section">
+    <h3>UCE Results (O-Level*:</h3>
+    <table>
+      <tr>
+        <th>MTC</th>
+        <th>ENG</th>
+        <th>CHEM</th>
+        <th>BIO</th>
+        <th>PHY</th>
+        <th>HIS</th>
+        <th>GEO</th>
+        <th>OPT 1</th>
+        <th>OPT 2</th>
+        <th>OPT 3</th>
+      </tr>
+      <tr>
+        <td><input type="text" name="uce_sub1"></td>
+        <td><input type="text" name="uce_sub2"></td>
+        <td><input type="text" name="uce_sub3"></td>
+        <td><input type="text" name="uce_sub4"></td>
+        <td><input type="text" name="uce_sub5"></td>
+        <td><input type="text" name="uce_sub6"></td>
+        <td><input type="text" name="uce_sub7"></td>
+        <td><input type="text" name="uce_sub8"></td>
+        <td><input type="text" name="uce_sub9"></td>
+        <td><input type="text" name="uce_sub10"></td>
+      </tr>
+    </table>
+  </div><hr>
+
+  <button type="submit">APPLY NOW</button>
+
+</body>
+</html>

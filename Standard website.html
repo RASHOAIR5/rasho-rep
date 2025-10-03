@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mission & Vision Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #2c3e50;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px
+    }
+    nav .logo {
+      font-size: 20px;
+      font-weight: bold;
+       border-radius: 4px;
+       text-align: center;
+    }
+    nav .buttons button {
+      margin-left: 10px;
+      padding: 20px 15px;
+      border: none;
+      background: #555;
+      color: white;
+      cursor: pointer;
+      display: flex;
+      border-radius: 4px;
+      font-size: xx-large;
+      
+    }
+    nav .buttons button:hover {
+      background: #777;
+    }
+
+    /* Layout */
+    .container {
+      display: flex;
+      flex: 1;
+    }
+
+    /* Aside */
+    aside {
+      width: 20%;
+      background: #f4f4f4;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+      font-size: x-large;
+        }
+    aside p {
+      margin: 15px 0;
+      font-weight: bold;
+        border:1px;
+      
+    }
+
+    /* Main content */
+    main {
+      flex: 1;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .box {
+      background: #eaeaea;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .box h2 {
+      margin-top: 0;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 35px;
+      background: #2c3e50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+   <!-- Navbar -->
+  <nav>
+    <div class="logo"><img src="LOGO 333.png" height="10%" width="16%"><br>
+      <button style="font-size: xx-large;">
+        <a href="Courses offered.html">Home</a>
+         <a href="Helpline.html">Contact</a>
+         <a href="Courses offered.html">About</a>
+      </button>
+    </div>
+  </nav>
+  <!-- Page Content -->
+  <div class="container">
+    <!-- Aside -->
+    <aside style="border: 1px;">
+      <a href="Courses offered.html">COURSES</a><br><br>
+      <a href="Admissions.html">ADMISSIONS</a><br><br>
+      <a href="Faculties.html">FACULTIES</a><br><br>
+      <a href="Helpline.html">HELPLINE</a><br>
+    </aside>
+
+    <!-- Main -->
+    <main>
+      <div class="box">
+        <h2>Our Mission</h2>
+        <p>"To produce at least twenty IT personnels every after a year. On top of that the institute is strategically located to allow a variety of people to access it"</p>
+      </div>
+      <div class="box">
+        <h2>Our Vision</h2>
+        <p>"To be the leading producers of talented and skilled IT personnels in Kampala region and Uganda at large"</p>
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+   
+      <u>Email us at;</u><br>
+      kigoyelawrence707@gmail.com <br><br>
+      <u>Whatsapp us at;</u><br>
+      +256702175554<br><br>
+      <u>Physical address;</u> <br>
+      Sir Apollo road near Seeme bakery-kawempe road<br>
+       &copy; <span id="year"></span>2025@rashoair5.com All rights reserved.<br><br>
+  </footer>
+</body>
+</html>

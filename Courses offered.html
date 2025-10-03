@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Courses Offered</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 8px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    /* Navigation */
+    nav {
+      background: #34495e;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      border-radius: 8px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+      font-size: x-large;
+    }
+
+    nav a:hover {
+      color: #f1c40f;
+    }
+
+    /* Main Content */
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .course-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .course-card h2 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+
+    .course-card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    /* Footer */
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+     <div class="logo"><img src="LOGO 333.png" height="10%" width="16%"></div><br>
+    <h1>RASHO EDITS ANDS TECHNOLOGICAL STUDIES</h1>
+    <p>Empowering Students Through Knowledge</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <button>Courses</button>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="course-card">
+      <h2>Diploma in Information Technology</h2>
+      <p>Learn programming, networking, and IT solutions to prepare for the digital world.</p>
+    </div>
+    <div class="course-card">
+      <h2> Diploma in Business Administration</h2>
+      <p>Develop management and leadership skills for the business environment.</p>
+    </div>
+    <div class="course-card">
+      <h2>Bachelor of Education</h2>
+      <p>Become a professional educator with practical teaching experience.</p>
+    </div>
+    <div class="course-card">
+      <h2>Bachelor of Engineering</h2>
+      <p>Specialize in civil, electrical, or mechanical engineering fields.</p>
+    </div>
+    <div class="course-card">
+      <h2>Diploma in Computer Science</h2>
+      <p>A short program focusing on software development and computer systems.</p>
+    </div>
+    <div class="course-card">
+      <h2>Certificate in Web Development</h2>
+      <p>Learn how to design and develop professional websites and web apps.</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; <span id="year"></span>@rashoair5.com. All Rights Reserved.
+  </footer>
+
+  <script>
+    // Auto-update year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
